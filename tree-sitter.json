@@ -4,7 +4,6 @@
     {
       "name": "vjass",
       "camelcase": "VJASS",
-      "title": "VJASS",
       "scope": "source.vjass",
       "file-types": [
         "vj"

@@ -1,0 +1,11 @@
+[package]
+name = "app"
+version = "0.2.0"
+authors = ["nazarpunk <nazarpunk@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+tree-sitter = "0.25.3"
+tree-sitter-vjass = { path = "./.." }
+
+[build-dependencies]

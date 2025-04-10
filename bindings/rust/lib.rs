@@ -10,7 +10,7 @@
 //! let language = tree_sitter_vjass::LANGUAGE;
 //! parser
 //!     .set_language(&language.into())
-//!     .expect("Error loading VJASS parser");
+//!     .expect("Error loading Vjass parser");
 //! let tree = parser.parse(code, None).unwrap();
 //! assert!(!tree.root_node().has_error());
 //! ```
@@ -48,6 +48,6 @@ mod tests {
         let mut parser = tree_sitter::Parser::new();
         parser
             .set_language(&super::LANGUAGE.into())
-            .expect("Error loading VJASS parser");
+            .expect("Error loading Vjass parser");
     }
 }
