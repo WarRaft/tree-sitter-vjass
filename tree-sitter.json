@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "vjass",
+      "camelcase": "VJASS",
+      "title": "VJASS",
+      "scope": "source.vjass",
+      "file-types": [
+        "vj"
+      ],
+      "injection-regex": "^vjass$",
+      "class-name": "TreeSitterVjass"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Vjass grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "nazarpunk",
+        "email": "nazarpunk@gmail.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter/tree-sitter-vjass"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
