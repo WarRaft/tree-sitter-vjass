@@ -29,11 +29,12 @@
   },
   "bindings": {
     "c": true,
-    "go": true,
+    "go": false,
     "node": true,
-    "python": true,
+    "python": false,
     "rust": true,
-    "swift": true,
-    "zig": false
+    "swift": false,
+    "zig": false,
+    "kotlin": true
   }
 }
