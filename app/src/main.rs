@@ -7,7 +7,7 @@ fn main() {
         .set_language(&language.into())
         .expect("Error loading Vjass parser");
 
-    let source_code = r#"[1, 2, {"a": 3, "b": 4}]"#;
+    let source_code = r#"[1, 2, {{"a": 3, "b": 4}]"#;
 
     let tree = parser.parse(source_code, None).unwrap();
 

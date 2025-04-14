@@ -1,0 +1,16 @@
+==================
+Can do simple do block
+==================
+
+do x = 1 end
+
+---
+
+(program
+  (do_statement
+    (do_start)
+    (variable_declaration
+      (variable_declarator (identifier))
+      (number))
+    (do_end)))
+

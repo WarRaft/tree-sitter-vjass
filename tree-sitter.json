@@ -7,15 +7,13 @@
       "scope": "source.vjass",
       "file-types": [
         "vj"
-      ],
-      "injection-regex": "^vjass$",
-      "class-name": "TreeSitterVjass"
+      ]
     }
   ],
   "metadata": {
     "version": "0.1.0",
     "license": "MIT",
-    "description": "Vjass grammar for tree-sitter",
+    "description": "VJASS grammar for tree-sitter",
     "authors": [
       {
         "name": "nazarpunk",
@@ -27,13 +25,8 @@
     }
   },
   "bindings": {
-    "c": true,
     "go": false,
-    "node": true,
     "python": false,
-    "rust": true,
-    "swift": false,
-    "zig": false,
-    "kotlin": true
+    "swift": false
   }
 }
