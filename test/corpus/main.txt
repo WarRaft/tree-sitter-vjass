@@ -1,8 +1,10 @@
 ==================
-Can do simple do block
+Main
 ==================
 
-do x = 1 end
+globals
+
+endglobals
 
 ---
 
