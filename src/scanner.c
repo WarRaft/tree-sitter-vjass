@@ -41,8 +41,8 @@ static inline void skip_whitespaces(TSLexer *lexer) {
   }
 }
 
-void *tree_sitter_lua_external_scanner_create() { return NULL; }
-void tree_sitter_lua_external_scanner_destroy(void *payload) {}
+void *tree_sitter_vjass_external_scanner_create() { return NULL; }
+void tree_sitter_vjass_external_scanner_destroy(void *payload) {}
 
 char ending_char = 0;
 uint8_t level_count = 0;
@@ -52,13 +52,13 @@ static inline void reset_state() {
   level_count = 0;
 }
 
-unsigned tree_sitter_lua_external_scanner_serialize(void *payload, char *buffer) {
+unsigned tree_sitter_vjass_external_scanner_serialize(void *payload, char *buffer) {
   buffer[0] = ending_char;
   buffer[1] = level_count;
   return 2;
 }
 
-void tree_sitter_lua_external_scanner_deserialize(void *payload, const char *buffer, unsigned length) {
+void tree_sitter_vjass_external_scanner_deserialize(void *payload, const char *buffer, unsigned length) {
   if (length == 0) return;
   ending_char = buffer[0];
   if (length == 1) return;
@@ -192,7 +192,7 @@ static bool scan_string_content(TSLexer *lexer) {
   return true;
 }
 
-bool tree_sitter_lua_external_scanner_scan(void *payload, TSLexer *lexer, const bool *valid_symbols) {
+bool tree_sitter_vjass_external_scanner_scan(void *payload, TSLexer *lexer, const bool *valid_symbols) {
   if (valid_symbols[STRING_END] && scan_string_end(lexer)) {
     reset_state();
     lexer->result_symbol = STRING_END;

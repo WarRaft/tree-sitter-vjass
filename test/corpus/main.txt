@@ -1,18 +1,10 @@
 ==================
-Main
+Variables
 ==================
 
-globals
+int a, b, c = 3
 
-endglobals
 
 ---
 
-(program
-  (do_statement
-    (do_start)
-    (variable_declaration
-      (variable_declarator (identifier))
-      (number))
-    (do_end)))
-
+(program)
