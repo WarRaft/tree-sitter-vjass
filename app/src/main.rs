@@ -23,7 +23,9 @@ fn print_node(node: Node, source: &str, indent: usize) {
     let indent_str = "  ".repeat(indent);
     let kind = node.kind();
     let text = node.utf8_text(source.as_bytes()).unwrap_or("<?>");
-    let pos = node.start_position(); // .row и .column
+    let pos = node.start_position();
+    
+    
 
     println!(
         "{indent_str}{kind} (line {}, column {}): {}",

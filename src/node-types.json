@@ -1,469 +1,18 @@
 [
   {
-    "type": "binary_operation",
+    "type": "expr",
     "named": true,
     "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "binary_operation",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "do_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "do_end",
-          "named": true
-        },
-        {
-          "type": "do_start",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "function_statement",
-          "named": true
-        },
-        {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "field",
-    "named": true,
-    "fields": {
-      "field_left_bracket": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "field_left_bracket",
-            "named": true
-          }
-        ]
-      },
-      "field_right_bracket": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "field_right_bracket",
-            "named": true
-          }
-        ]
-      },
-      "key": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "[",
-            "named": false
-          },
-          {
-            "type": "]",
-            "named": false
-          },
-          {
-            "type": "binary_operation",
-            "named": true
-          },
-          {
-            "type": "function",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "id",
-            "named": true
-          },
-          {
-            "type": "number",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "tableconstructor",
-            "named": true
-          },
-          {
-            "type": "unary_operation",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "id",
-            "named": true
-          }
-        ]
-      },
-      "value": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "[",
-            "named": false
-          },
-          {
-            "type": "]",
-            "named": false
-          },
-          {
-            "type": "binary_operation",
-            "named": true
-          },
-          {
-            "type": "function",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "id",
-            "named": true
-          },
-          {
-            "type": "number",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "tableconstructor",
-            "named": true
-          },
-          {
-            "type": "unary_operation",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "fieldlist",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "field",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "function_body",
-          "named": true
-        },
-        {
-          "type": "function_body_paren",
-          "named": true
-        },
-        {
-          "type": "function_end",
-          "named": true
-        },
-        {
-          "type": "function_start",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_arguments",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "binary_operation",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_body",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "function_statement",
-          "named": true
-        },
-        {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_call",
-    "named": true,
-    "fields": {
-      "args": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "function_arguments",
-            "named": true
-          },
-          {
-            "type": "string_argument",
-            "named": true
-          },
-          {
-            "type": "table_argument",
-            "named": true
-          }
-        ]
-      },
-      "prefix": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "[",
-            "named": false
-          },
-          {
-            "type": "]",
-            "named": false
-          },
-          {
-            "type": "binary_operation",
-            "named": true
-          },
-          {
-            "type": "function",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "id",
-            "named": true
-          },
-          {
-            "type": "number",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "tableconstructor",
-            "named": true
-          },
-          {
-            "type": "unary_operation",
-            "named": true
-          }
-        ]
-      }
-    },
     "children": {
       "multiple": true,
       "required": false,
       "types": [
         {
-          "type": "function_call_paren",
+          "type": "expr",
+          "named": true
+        },
+        {
+          "type": "float",
           "named": true
         },
         {
@@ -471,14 +20,18 @@
           "named": true
         },
         {
-          "type": "self_call_colon",
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "function_name",
+    "type": "globals",
     "named": true,
     "fields": {},
     "children": {
@@ -486,92 +39,11 @@
       "required": true,
       "types": [
         {
-          "type": "id",
+          "type": "endglobals_",
           "named": true
         },
         {
-          "type": "table_colon",
-          "named": true
-        },
-        {
-          "type": "table_dot",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_statement",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "function_name",
-            "named": true
-          },
-          {
-            "type": "id",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "function_body",
-          "named": true
-        },
-        {
-          "type": "function_body_paren",
-          "named": true
-        },
-        {
-          "type": "function_end",
-          "named": true
-        },
-        {
-          "type": "function_start",
-          "named": true
-        },
-        {
-          "type": "local",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "globals_stmt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "endglobals",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "function_statement",
+          "type": "expr",
           "named": true
         },
         {
@@ -579,30 +51,22 @@
           "named": true
         },
         {
-          "type": "globals_stmt",
+          "type": "globals_",
           "named": true
         },
         {
-          "type": "if_statement",
+          "type": "loop",
           "named": true
         },
         {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
+          "type": "struct",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "if_statement",
+    "type": "loop",
     "named": true,
     "fields": {},
     "children": {
@@ -610,98 +74,27 @@
       "required": true,
       "types": [
         {
-          "type": "binary_operation",
+          "type": "endloop_",
           "named": true
         },
         {
-          "type": "do_statement",
+          "type": "expr",
           "named": true
         },
         {
-          "type": "function",
+          "type": "globals",
           "named": true
         },
         {
-          "type": "function_call",
+          "type": "loop",
           "named": true
         },
         {
-          "type": "function_statement",
+          "type": "loop_",
           "named": true
         },
         {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "if_else",
-          "named": true
-        },
-        {
-          "type": "if_elseif",
-          "named": true
-        },
-        {
-          "type": "if_end",
-          "named": true
-        },
-        {
-          "type": "if_start",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "if_then",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "parameter_list",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "id",
+          "type": "struct",
           "named": true
         }
       ]
@@ -717,114 +110,19 @@
       "required": false,
       "types": [
         {
-          "type": "do_statement",
+          "type": "expr",
           "named": true
         },
         {
-          "type": "function_call",
+          "type": "globals",
           "named": true
         },
         {
-          "type": "function_statement",
+          "type": "loop",
           "named": true
         },
         {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "repeat_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "binary_operation",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "function_statement",
-          "named": true
-        },
-        {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "repeat_start",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "repeat_until",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_statement",
+          "type": "struct",
           "named": true
         }
       ]
@@ -867,73 +165,7 @@
     }
   },
   {
-    "type": "string_argument",
-    "named": true,
-    "fields": {
-      "content": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "string_content",
-            "named": false
-          }
-        ]
-      },
-      "end": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "string_end",
-            "named": false
-          }
-        ]
-      },
-      "start": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "string_start",
-            "named": false
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "table_argument",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "fieldlist",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "tableconstructor",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "fieldlist",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "unary_operation",
+    "type": "struct",
     "named": true,
     "fields": {},
     "children": {
@@ -941,228 +173,34 @@
       "required": true,
       "types": [
         {
-          "type": "binary_operation",
+          "type": "endstruct_",
           "named": true
         },
         {
-          "type": "function",
+          "type": "expr",
           "named": true
         },
         {
-          "type": "function_call",
+          "type": "globals",
           "named": true
         },
         {
-          "type": "id",
+          "type": "loop",
           "named": true
         },
         {
-          "type": "number",
+          "type": "struct",
           "named": true
         },
         {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
+          "type": "struct_",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "var_declz",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "binary_operation",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "var_stmt",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "var_declz",
-            "named": true
-          }
-        ]
-      },
-      "type": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "id",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "array",
-          "named": true
-        },
-        {
-          "type": "constant",
-          "named": true
-        },
-        {
-          "type": "local",
-          "named": true
-        },
-        {
-          "type": "var_declz",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "while_statement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "binary_operation",
-          "named": true
-        },
-        {
-          "type": "do_statement",
-          "named": true
-        },
-        {
-          "type": "function",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "function_statement",
-          "named": true
-        },
-        {
-          "type": "globals_stmt",
-          "named": true
-        },
-        {
-          "type": "id",
-          "named": true
-        },
-        {
-          "type": "if_statement",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "repeat_statement",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "tableconstructor",
-          "named": true
-        },
-        {
-          "type": "unary_operation",
-          "named": true
-        },
-        {
-          "type": "var_stmt",
-          "named": true
-        },
-        {
-          "type": "while_do",
-          "named": true
-        },
-        {
-          "type": "while_end",
-          "named": true
-        },
-        {
-          "type": "while_start",
-          "named": true
-        },
-        {
-          "type": "while_statement",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "\u0000",
-    "named": false
-  },
-  {
-    "type": "#",
-    "named": false
-  },
-  {
-    "type": "%",
-    "named": false
-  },
-  {
-    "type": "&",
+    "type": "!=",
     "named": false
   },
   {
@@ -1182,6 +220,10 @@
     "named": false
   },
   {
+    "type": "++",
+    "named": false
+  },
+  {
     "type": ",",
     "named": false
   },
@@ -1190,11 +232,11 @@
     "named": false
   },
   {
-    "type": ".",
+    "type": "--",
     "named": false
   },
   {
-    "type": "..",
+    "type": ".",
     "named": false
   },
   {
@@ -1202,19 +244,7 @@
     "named": false
   },
   {
-    "type": "//",
-    "named": false
-  },
-  {
-    "type": ";",
-    "named": false
-  },
-  {
     "type": "<",
-    "named": false
-  },
-  {
-    "type": "<<",
     "named": false
   },
   {
@@ -1238,10 +268,6 @@
     "named": false
   },
   {
-    "type": ">>",
-    "named": false
-  },
-  {
     "type": "[",
     "named": false
   },
@@ -1250,16 +276,8 @@
     "named": false
   },
   {
-    "type": "^",
-    "named": false
-  },
-  {
     "type": "and",
     "named": false
-  },
-  {
-    "type": "array",
-    "named": true
   },
   {
     "type": "comment_content",
@@ -1274,47 +292,23 @@
     "named": false
   },
   {
-    "type": "constant",
+    "type": "endglobals_",
     "named": true
   },
   {
-    "type": "do_end",
+    "type": "endloop_",
     "named": true
   },
   {
-    "type": "do_start",
+    "type": "endstruct_",
     "named": true
   },
   {
-    "type": "endglobals",
+    "type": "float",
     "named": true
   },
   {
-    "type": "field_left_bracket",
-    "named": true
-  },
-  {
-    "type": "field_right_bracket",
-    "named": true
-  },
-  {
-    "type": "function_body_paren",
-    "named": true
-  },
-  {
-    "type": "function_call_paren",
-    "named": true
-  },
-  {
-    "type": "function_end",
-    "named": true
-  },
-  {
-    "type": "function_start",
-    "named": true
-  },
-  {
-    "type": "globals",
+    "type": "globals_",
     "named": true
   },
   {
@@ -1322,27 +316,7 @@
     "named": true
   },
   {
-    "type": "if_else",
-    "named": true
-  },
-  {
-    "type": "if_elseif",
-    "named": true
-  },
-  {
-    "type": "if_end",
-    "named": true
-  },
-  {
-    "type": "if_start",
-    "named": true
-  },
-  {
-    "type": "if_then",
-    "named": true
-  },
-  {
-    "type": "local",
+    "type": "loop_",
     "named": true
   },
   {
@@ -1358,18 +332,6 @@
     "named": false
   },
   {
-    "type": "repeat_start",
-    "named": true
-  },
-  {
-    "type": "repeat_until",
-    "named": true
-  },
-  {
-    "type": "self_call_colon",
-    "named": true
-  },
-  {
     "type": "string_content",
     "named": false
   },
@@ -1382,43 +344,7 @@
     "named": false
   },
   {
-    "type": "table_colon",
+    "type": "struct_",
     "named": true
-  },
-  {
-    "type": "table_dot",
-    "named": true
-  },
-  {
-    "type": "while_do",
-    "named": true
-  },
-  {
-    "type": "while_end",
-    "named": true
-  },
-  {
-    "type": "while_start",
-    "named": true
-  },
-  {
-    "type": "{",
-    "named": false
-  },
-  {
-    "type": "|",
-    "named": false
-  },
-  {
-    "type": "}",
-    "named": false
-  },
-  {
-    "type": "~",
-    "named": false
-  },
-  {
-    "type": "~=",
-    "named": false
   }
 ]
